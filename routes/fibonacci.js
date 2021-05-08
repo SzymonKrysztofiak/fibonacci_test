@@ -4,7 +4,6 @@ const math = require('../math')
 
 router.get('/', function(req, res, next) {
   if (req.query.fibonacciNumber) {
-    console.log(req.query.fibonacciNumber)
     res.render('fibonacci', {
       title: 'Calculate Fibonacci numbers',
       fibonacciNumber: req.query.fibonacciNumber,
