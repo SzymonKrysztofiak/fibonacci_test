@@ -1,3 +1,27 @@
 <h1>{{title}}</h1>
 {{> navbar}}
-<p>Welcome to {{title}}</p>
+<p>Fibonacci Calculator is a functional test of blocking and asynchronous
+  scripts
+  in node.js.</p>
+<p>The old article <a
+    href="https://www.semitwist.com/mirror/node-js-is-cancer.html">node-js-is-cancer</a>
+  uses this algorithm to prove that node.js is
+  inefficient and not scalable.</p>
+<p>The conclusions, however, are based on poor implementation and denial of the
+  asynchrine nature of node.js.</p>
+<p>In the Fibonacci's tab you will find forms that will allow you to check the
+  operation of individual cases. In some it is enough to improve the algorithm,
+  in
+  others it is enough to move the heavy computation outside.</p>
+<p>You can also check individual scripts in the console by typing:</p>
+<ul>
+  <li>
+    <pre>yarn log:block</pre>
+  </li>
+  <li>
+    <pre>yarn log:nonblock</pre>
+  </li>
+  <li>
+    <pre>yarn log:async</pre>
+  </li>
+</ul>
