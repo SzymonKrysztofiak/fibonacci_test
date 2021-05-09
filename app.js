@@ -6,7 +6,8 @@ const logger = require('morgan')
 const hbs = require('hbs')
 
 const indexRouter = require('./routes/index')
-const fibonacciRouter = require('./routes/fibonacci')
+const fibonacciRouter = require('./routes/fibonacci_block')
+const fibonacciRouterAsync = require('./routes/fibonacci_async1')
 
 const app = express()
 
@@ -23,6 +24,7 @@ app.use(express.static(path.join(__dirname, 'public')))
 
 app.use('/', indexRouter)
 app.use('/fibonacci', fibonacciRouter)
+app.use('/fibonacci_async', fibonacciRouterAsync)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

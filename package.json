@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "start": "DEBUG=fibonacci_test:* node ./bin/www",
-    "log": "node fibotimes.js"
+    "log:block": "node fibotimes_block.js",
+    "log:nonblock": "node fibotimes_nonblock.js",
+    "log:async": "node fibotimes_async.js"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",

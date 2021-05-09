@@ -5,7 +5,19 @@
 <hr />
 {{/if}}
 <p>Enter a number to see it's Fibonacci number</p>
+
+<h2>Blocking</h2>
+<p>Long latency due to inefficient algorithm</p>
+
 <form action="/fibonacci" name="fibonacci" method="get">
+  <input type="text" name="fibonacciNumber">
+  <input type="submit" value="Submit">
+</form>
+
+<h2>Async</h2>
+<p>Long latency, but async and non-blocking</p>
+
+<form action="/fibonacci_async" name="fibonacci" method="get">
   <input type="text" name="fibonacciNumber">
   <input type="submit" value="Submit">
 </form>
